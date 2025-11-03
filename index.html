@@ -1,130 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HLyC Soluciones · Instalaciones y Mantenimiento</title>
-  <meta name="description" content="HLyC Soluciones: instalaciones térmicas, climatización, electricidad, fontanería y mantenimiento industrial y naval en Galicia.">
-  <meta name="theme-color" content="#0f172a">
-  <link rel="icon" href="logo.svg">
-  <link rel="preload" href="styles.css" as="style">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HLC Soluciones — Instalaciones, mantenimiento y asesoramiento técnico en Galicia. Climatización, electricidad, fontanería e instalaciones térmicas.">
+  <title>HLC Soluciones</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; color: #222; }
+    header, section { padding: 2rem; }
+    .hero { display: flex; flex-wrap: wrap; background: #111; color: white; align-items: center; justify-content: space-between; }
+    .hero-copy { flex: 1; padding: 2rem; min-width: 280px; }
+    .hero-cta { margin-top: 1.5rem; }
+    .btn { display: inline-block; padding: 0.75rem 1.25rem; border-radius: 8px; font-weight: bold; text-decoration: none; }
+    .btn.primary { background: #00c853; color: white; }
+    .btn.ghost { border: 2px solid white; color: white; margin-left: 0.5rem; }
+    .btn:hover { opacity: 0.9; }
+    .section { padding: 3rem 2rem; }
+    .alt { background: #f4f4f4; }
+    h2 { color: #007a3d; margin-bottom: 1rem; }
+    .grid.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: white; border-radius: 10px; padding: 1.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    footer { background: #111; color: white; text-align: center; padding: 1.5rem 0; margin-top: 2rem; }
+    footer a { color: #00c853; text-decoration: none; }
+  </style>
 </head>
 <body>
-  <header class="site-header" id="inicio">
-    <nav class="nav container">
-      <a class="brand" href="#inicio">
-        <img src="ChatGPT Image 3 nov 2025, 16_52_13.png" alt="HLC Soluciones" width="140">
-        <span>HLyC <strong>Soluciones</strong></span>
-      </a>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle">
-      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú">☰</label>
-      <ul class="nav-links">
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-    <section class="hero container">
-      <div class="hero-copy">
-        <h1>Instalaciones y Mantenimiento de Confianza</h1>
-        <p>Especialistas en <strong>climatización</strong>, <strong>instalaciones térmicas</strong>, <strong>electricidad</strong> y <strong>fontanería</strong>. Mantenimiento industrial y naval con respuesta rápida en Galicia.</p>
-        <div class="hero-cta">
-          <a class="btn primary" 
-        href="#contacto">Pide presupuesto</a>
-          <a class="btn ghost" 
-        href="#servicios">Ver servicios</a>
-        </div>
-      </div>
 
-      <div class="hero-art"
-aria-hidden="true">
-      <div class="art-gradient"></div>
-        <div class="art-card">
-  <h3>Asesoramiento profesional y planificación a pie de obra</h3>
-  <p>Supervisión de proyectos en curso. Coordinación con instaladores, control y verificación de materiales cumpliendo normativa aplicable RITE. Acompañamiento técnico directo en la obra.</p> <article></article>
-<article class="card"> 
-  <h3>Obras y reformas</h3>
-  <p>Ejecución integral de reformas y adecuaciones industriales o residenciales. Altos controles de calidad y mejora continua. Control de resudios</p> </article>article>
+  <!-- HERO INICIO -->
+  <section class="hero container" id="inicio">
+    <div class="hero-copy">
+      <img src="hlc_logo.png" alt="HLC Soluciones" width="120">
+      <h1>Mantenimiento de Confianza</h1>
+      <p>Especialistas en <strong>climatización</strong>, <strong>instalaciones térmicas</strong>, <strong>electricidad</strong> y <strong>fontanería</strong>.  
+      Mantenimiento industrial y naval con respuesta rápida en Galicia.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#contacto">Pide presupuesto</a>
+        <a class="btn ghost" href="#servicios">Ver servicios</a>
       </div>
-      </div>
-      
-      <div class="hero-art" aria-hidden="true">
-        <div class="art-gradient"></div>
-        <div class="art-card">
-          <h3>Eficiencia & Fiabilidad</h3>
-          <p>Optimización energética, mantenimiento preventivo y puesta en marcha.</p>
-        </div>
-      </div>
-    </section>
-  </header>
-
-  <main>
-    <section class="section container" id="servicios" aria-labelledby="servicios-title">
-      <h2 id="servicios-title">Servicios</h2>
-      <div class="grid cards">
-        <article class="card">
-          <h3>Climatización (HVAC)</h3>
-          <p>Diseño, instalación y mantenimiento de bombas de calor, VRF y split. Cálculo de cargas y equilibrado hidráulico.</p>
-        </article>
-        <article class="card">
-          <h3>Instalaciones Térmicas</h3>
-          <p>Salas de calderas, ACS, interacumuladores, intercambiadores y control. Cumplimiento <abbr title="Reglamento de Instalaciones Térmicas en los Edificios">RITE</abbr>.</p>
-        </article>
-        <article class="card">
-          <h3>Electricidad</h3>
-          <p>Cuadros eléctricos, protecciones, cableado y legalizaciones. Iluminación eficiente y fotovoltaica básica.</p>
-        </article>
-        <article class="card">
-          <h3>Fontanería</h3>
-          <p>Redes en PPR y multicapa, estaciones de bombeo, descalcificación y tratamiento de agua.</p>
-        </article>
-        <article class="card">
-          <h3>Mantenimiento Industrial y Naval</h3>
-          <p>Plan de mantenimiento preventivo, correctivo y predictivo. Protocolos de seguridad y documentación.</p>
-        </article>
-        <article class="card">
-          <h3>Urgencias 24/7</h3>
-          <p>Atención prioritaria para averías críticas y paradas imprevistas (según contrato).</p>
-        </article>
-      </div>
-    </section>
-
-   
-
-    <section class="section container" id="contacto" aria-labelledby="contacto-title">
-      <h2 id="contacto-title">Contacto</h2>
-      <div class="contact">
-        <div class="contact-info">
-          <p><strong>HLyC Soluciones</strong></p>
-          <p>Galicia, España</p>
-       
-          <p>Email: <a href="mailto:info.hlycsoluciones@gmail.com">info.hlycsoluciones@gmail.com</a> (provisional)</p>
-          <p>Horario: L–V 9:00–18:00</p>
-        </div>
-        <form class="contact-form" action="mailto:info.hlycsoluciones@gmail.com" method="post" enctype="text/plain">
-          <label for="nombre">Nombre</label>
-          <input id="nombre" name="Nombre" required placeholder="Tu nombre">
-          <label for="email">Email</label>
-          <input id="email" name="Email" type="email" required placeholder="tunombre@email.com">
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="Mensaje" rows="5" required placeholder="Cuéntanos qué necesitas"></textarea>
-          <button class="btn primary" type="submit">Enviar</button>
-          <p class="form-note">Este formulario abre tu gestor de correo para enviar el mensaje.</p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> HLyC Soluciones · Todos los derechos reservados</p>
-      <a href="#inicio" class="to-top" aria-label="Volver arriba">↑</a>
     </div>
+  </section>
+  <!-- HERO FIN -->
+
+
+  <!-- QUIÉNES SOMOS -->
+  <section class="section alt container" id="nosotros">
+    <h2>Sobre HLC Soluciones</h2>
+    <p><strong>HLC Soluciones</strong> nace con la vocación de ofrecer un servicio técnico integral, combinando la experiencia profesional en instalaciones térmicas, electricidad, climatización y mantenimiento industrial.</p>
+    <p>La empresa surge de la necesidad de aportar soluciones reales y cercanas, con una atención personalizada y planificación a pie de obra.</p>
+    <p>Nuestro compromiso es la calidad, la seguridad y el trabajo bien hecho — sin improvisaciones.</p>
+  </section>
+
+
+  <!-- SERVICIOS -->
+  <section class="section container" id="servicios" aria-labelledby="servicios-title">
+    <h2 id="servicios-title">Servicios</h2>
+    <div class="grid cards">
+
+      <article class="card">
+        <h3>Climatización (HVAC)</h3>
+        <p>Diseño, instalación y mantenimiento de bombas de calor, VRF y split. Cálculo de cargas térmicas y equilibrado hidráulico.</p>
+      </article>
+
+      <article class="card">
+        <h3>Instalaciones Térmicas</h3>
+        <p>Salas de calderas, ACS, interacumuladores, intercambiadores y control. Cumplimiento RITE y documentación técnica.</p>
+      </article>
+
+      <article class="card">
+        <h3>Electricidad</h3>
+        <p>Cuadros eléctricos, protecciones, cableado y legalizaciones. Iluminación eficiente y fotovoltaica básica.</p>
+      </article>
+
+      <article class="card">
+        <h3>Fontanería</h3>
+        <p>Redes en PPR y multicapa, estaciones de bombeo, descalcificación y tratamiento de agua.</p>
+      </article>
+
+      <article class="card">
+        <h3>Mantenimiento Industrial y Naval</h3>
+        <p>Plan de mantenimiento preventivo y correctivo. Atención prioritaria ante averías y paradas imprevistas.</p>
+      </article>
+
+      <article class="card">
+        <h3>Urgencias 24/7</h3>
+        <p>Atención prioritaria para averías críticas y paradas imprevistas según contrato.</p>
+      </article>
+
+      <article class="card">
+        <h3>Asesoramiento profesional y planificación a pie de obra</h3>
+        <p>Supervisión técnica de proyectos en curso, coordinación con instaladores, control de materiales y verificación normativa. Acompañamiento directo en campo.</p>
+      </article>
+
+      <article class="card">
+        <h3>Obras y reformas</h3>
+        <p>Ejecución integral de reformas industriales o residenciales. Altos estándares de calidad y mejora continua.</p>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACTO -->
+  <section class="section alt container" id="contacto">
+    <h2>Contacto</h2>
+    <p>Ponte en contacto con nosotros para consultas, presupuestos o asistencia técnica:</p>
+    <p><strong>HLC Soluciones</strong><br>
+    Galicia, España<br>
+    Email: <a href="mailto:info.hlycsoluciones@gmail.com">info.hlycsoluciones@gmail.com</a><br>
+    WhatsApp: <a href="https://wa.me/34690188090" target="_blank">+34 690 188 090</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 HLC Soluciones — El trabajo bien hecho no se improvisa</p>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
