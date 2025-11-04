@@ -20,22 +20,27 @@
     img{max-width:100%;height:auto;display:block}
     a{color:inherit;text-decoration:none}
 a{color:inherit;text-decoration:none}
-
 /* Logo grande centrado en la portada */
-.hero-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.5rem;
+.hero-logo{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:1.5rem;
+}
+.hero-logo img{
+  width:420px;               /* sube a 380–420 si lo quieres más grande */
+  height:auto;
+  object-fit:contain;
+  border-radius:10px;        /* opcional */
+  box-shadow:0 0 15px rgba(0,0,0,.4); /* opcional */
 }
 
-.hero-logo img {
-  width: 400px;   /* tamaño grande tipo emblema */
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4); /* efecto visual elegante */
+/* En móviles, que no ocupe demasiado */
+@media (max-width: 480px){
+  .hero-logo img{ width:240px; }
 }
+
+
 
 
 /* HEADER FIJO */
@@ -111,28 +116,36 @@ header{position:fixed;top:0;left:0;height:var(--hdr); ... }
     </nav>
   </header>
 
-  <!-- HERO -->
-  <section id="inicio" class="hero">
-    <div class="container hero-wrap">
-      <div class="hero-copy">
-        <img src="ChatGPT Image 3 nov 2025 19_52_13.png" alt="HLC Soluciones">
-      </div>
-        <h1>Mantenimiento de Confianza</h1>
-        <p>Especialistas en <strong>climatización</strong>, <strong>instalaciones térmicas</strong>, <strong>electricidad</strong> y <strong>fontanería</strong>. Mantenimiento industrial y naval con respuesta rápida en Galicia.</p>
+ <!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="container hero-wrap">
 
-        <div class="hero-cta">
-          <a class="btn primary" href="#contacto">Pide presupuesto</a>
-          <a class="btn ghost" href="#servicios">Ver servicios</a>
-        </div>
-
-        <p class="hero-intro">
-          HLC Soluciones nace para ofrecer un servicio técnico cercano y fiable. Tras años en instalaciones y mantenimiento,
-          detectamos la necesidad de planificar desde el inicio, responder con claridad y ejecutar sin improvisaciones.
-          Damos el paso para seguir haciendo las cosas con calidad, seguridad y compromiso.
-        </p>
-      </div>
+    <div class="hero-logo">
+      <img src="hlc_logo.png" alt="HLC Soluciones">
     </div>
-  </section>
+
+    <div class="hero-copy">
+      <h1>Mantenimiento de Confianza</h1>
+      <p>Especialistas en <strong>climatización</strong>, <strong>instalaciones térmicas</strong>, 
+         <strong>electricidad</strong> y <strong>fontanería</strong>. 
+         Mantenimiento industrial y naval con respuesta rápida en Galicia.</p>
+
+      <div class="hero-cta">
+        <a class="btn primary" href="#contacto">Pide presupuesto</a>
+        <a class="btn ghost" href="#servicios">Ver servicios</a>
+      </div>
+
+      <p class="hero-intro">
+        HLC Soluciones nace para ofrecer un servicio técnico cercano y fiable.
+        Tras años en instalaciones y mantenimiento, detectamos la necesidad de planificar desde el inicio,
+        responder con claridad y ejecutar sin improvisaciones. 
+        Damos el paso para seguir haciendo las cosas con calidad, seguridad y compromiso.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- SOBRE -->
   <section id="nosotros" class="alt">
